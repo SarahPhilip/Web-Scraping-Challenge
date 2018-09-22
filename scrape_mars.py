@@ -22,7 +22,7 @@ def scrape():
 	scraped_data = {}
 	url = "https://mars.nasa.gov/news/"
 	response = render_page(url)
-	# browser.visit(url)
+	browser.visit(url)
 	time.sleep(3)
 	soup = bs(response, 'html.parser')
 	results = soup.find_all('div',class_="list_text")
