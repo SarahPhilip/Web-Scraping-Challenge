@@ -74,6 +74,6 @@ def scrape():
 		hem_dict = {'title': title_striped, 'img_url': url}
 		hem_img_urls.append(hem_dict)
 		browser.visit(base_url)
-		scraped_data["hem_img_urls"] = hem_img_urls
+		scraped_data["hemispheres"] = hem_img_urls
 
 	return scraped_data
